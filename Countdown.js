@@ -61,22 +61,22 @@ setInterval(function(){
 						complete = true;
 					}
 					else
-						finalMessage+=(60-date.getSeconds()-1)+" seconds left till new years";
+						finalMessage+=(60-date.getSeconds()-1)+" seconds left until new years";
 				}
 				else{
-					finalMessage+=(60-date.getMinutes()-1)+" minutes and "+(60-date.getSeconds()-1)+" seconds left till new years";
+					finalMessage+=(60-date.getMinutes()-1)+" minutes and "+(60-date.getSeconds()-1)+" seconds left until new years";
 				}
 			}
 			else{
-				finalMessage+=(24-date.getHours()-1)+" hours "+(60-date.getMinutes()-1)+" minutes and "+(60-date.getSeconds()-1)+" seconds left till new years";
+				finalMessage+=(24-date.getHours()-1)+" hours "+(60-date.getMinutes()-1)+" minutes and "+(60-date.getSeconds()-1)+" seconds left until new years";
 			}
 		}
 		else{
-			finalMessage+=(daysInMonth-date.getDate())+" days "+(24-date.getHours()-1)+" hours "+(60-date.getMinutes()-1)+" minutes and "+(60-date.getSeconds()-1)+" seconds left till new years";
+			finalMessage+=(daysInMonth-date.getDate())+" days "+(24-date.getHours()-1)+" hours "+(60-date.getMinutes()-1)+" minutes and "+(60-date.getSeconds()-1)+" seconds left until new years";
 		}
 	}
 	else {
-		finalMessage+=(11-date.getMonth())+" Months "+(daysInMonth-date.getDate())+" days "+(24-date.getHours()-1)+" hours "+(60-date.getMinutes()-1)+" minutes and "+(60-date.getSeconds()-1)+" seconds left till new years";
+		finalMessage+=(11-date.getMonth())+" Months "+(daysInMonth-date.getDate())+" days "+(24-date.getHours()-1)+" hours "+(60-date.getMinutes()-1)+" minutes and "+(60-date.getSeconds()-1)+" seconds left until new years";
 	}
 	Countdown.innerHTML=finalMessage;
 }
